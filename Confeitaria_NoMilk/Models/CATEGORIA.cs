@@ -4,11 +4,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Confeitaria_NoMilk.Models
 {
 
-	[Table("CATEGORIA")]
+	[Table("CATEGORIAS")]
 	public class CATEGORIA
 	{
 		[Key]
-        public int CATEGORIA_ID { get; set; }
+        public int CATEGORIAID { get; set; }
 
 		[StringLength(100, ErrorMessage = "O tamanho máximo é 100 caracteres")]
 		[Required(ErrorMessage = "Informe o nome da categoria")]

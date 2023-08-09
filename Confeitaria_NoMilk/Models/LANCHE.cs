@@ -4,11 +4,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Confeitaria_NoMilk.Models
 {
-	[Table("LANCHE")]
+	[Table("LANCHES")]
     public class LANCHE
     {
 		[Key]
-        public int LANCHE_ID { get; set; }
+        public int LANCHEID { get; set; }
 
 		[Required(ErrorMessage = "O nome do lanche deve ser informado")]
 		[Display(Name = "Nome do Lanche")]
@@ -50,7 +50,7 @@ namespace Confeitaria_NoMilk.Models
 
         //definição de relacionamento da classe lanche com o a classe categoria
 		[Display(Name = "Categorias")]
-        public int CATEGORIA_ID { get; set; }
+        public int CATEGORIAID { get; set; }
         public virtual CATEGORIA CATEGORIA { get; set;}
     }
 }
